@@ -1,5 +1,6 @@
 {
   "name": "react-example",
+  "homepage": "https://urekMaznioDev.github.io/Interviewprep",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +9,9 @@
     "build": "vite build",
     "preview": "vite preview",
     "clean": "rm -rf dist",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@base-ui/react": "^1.3.0",
@@ -22,6 +25,7 @@
     "clsx": "^2.1.1",
     "dotenv": "^17.2.3",
     "express": "^4.21.2",
+    "gh-pages": "^6.3.0",
     "lucide-react": "^0.546.0",
     "mermaid": "^11.14.0",
     "motion": "^12.23.24",
